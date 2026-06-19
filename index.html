@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Deema IO — personal portfolio website for software, web projects, and technical work." />
+  <title>Deema IO | Personal Website</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Deema IO home">
+        <span class="brand-mark">D</span>
+        <span>deema<span class="accent">io</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Personal portfolio</p>
+        <h1>Hi, I’m <span>Deema</span> — I build clean, useful digital experiences.</h1>
+        <p class="hero-text">
+          A developer-focused personal website for showcasing projects, technical writing,
+          experiments, and professional growth.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">View Work</a>
+          <a class="btn secondary" href="https://github.com/deemaio" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Profile summary card">
+        <div class="code-window">
+          <div class="window-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code>const profile = {
+  username: "deemaio",
+  focus: "web development",
+  values: ["clean UI", "clarity", "learning"],
+  status: "building"
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Simple, professional, and built for growth.</h2>
+      </div>
+
+      <div class="about-grid">
+        <p>
+          This space is designed as a personal home on the web: a place to introduce yourself,
+          collect selected work, and make it easy for people to find your GitHub, LinkedIn,
+          and contact details.
+        </p>
+        <p>
+          The site is intentionally lightweight, responsive, and easy to edit. Replace the
+          sample text with your real bio, projects, and links as your profile grows.
+        </p>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects worth highlighting.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>Portfolio Website</h3>
+          <p>A clean personal site built with HTML, CSS, and JavaScript. Ready for GitHub Pages.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>Web App Project</h3>
+          <p>Add a real project here, such as a React app, dashboard, automation tool, or university project.</p>
+          <div class="tags">
+            <span>React</span><span>API</span><span>UI</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Technical Notes</h3>
+          <p>Use this card to link to your documentation, blog posts, GitHub repos, or learning notes.</p>
+          <div class="tags">
+            <span>Docs</span><span>Learning</span><span>GitHub</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools and areas of interest.</h2>
+      </div>
+
+      <div class="skill-list">
+        <span>Frontend Development</span>
+        <span>React</span>
+        <span>JavaScript</span>
+        <span>HTML & CSS</span>
+        <span>GitHub</span>
+        <span>UI Design</span>
+        <span>Problem Solving</span>
+        <span>Technical Writing</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect.</h2>
+        <p>
+          Add your email, LinkedIn, and professional links here. Keep it simple and easy to reach.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:hello@example.com">Email</a>
+          <a href="https://github.com/deemaio" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Deema IO. Built with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
